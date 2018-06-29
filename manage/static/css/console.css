@@ -1,0 +1,24 @@
+@charset "utf-8";
+body {
+    background: #efefef;
+}
+
+.layui-fluid {
+    padding: 12px;
+}
+
+.sys-card .sys-card-badge {
+    margin-top: 12px;
+    float: right;
+}
+
+.sys-card .sys-card-font {
+    font-size: 30px;
+    color: #666;
+    line-height: 30px;
+    padding: 10px 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}

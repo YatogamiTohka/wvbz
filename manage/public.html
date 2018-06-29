@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>系统管理 - 无V不至</title>
+    <link rel="stylesheet" href="../frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/add.css">
+</head>
+
+<body>
+    <div class="layui-fluid">
+        <form class="layui-form" autocomplete="off">
+            <div class="layui-row layui-col-space10">
+                <div class="layui-col-sm8">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label layui-form-label-required">网站名称</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="webName" class="layui-input" placeholder="50个字符内" maxlength="50" lay-verify="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm8">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label layui-form-label-required">网站LOGO</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="webLogo" class="layui-input" placeholder="" maxlength="100" lay-verify="required" value="123" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm8">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label layui-form-label-required">版权信息</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="copyRight" class="layui-input" placeholder="150个字符内" maxlength="150" lay-verify="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm8">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label layui-form-label-required">联系人</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="contactName" class="layui-input" placeholder="20个字符内" maxlength="20" lay-verify="required">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm8">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label layui-form-label-required">手机号</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="contactMobile" class="layui-input" placeholder="11位手机号" maxlength="11" lay-verify="required|phone">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm8">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label layui-form-label-required">国际汇率</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="exchangeRate" class="layui-input" placeholder="保留两个小数点" maxlength="5" lay-verify="required|number">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm8">
+                    <hr class="layui-bg-gray">
+                </div>
+                <div class="layui-col-sm12">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">&nbsp;</label>
+                        <div class="layui-input-block">
+                            <button class="layui-btn" type="button" lay-submit lay-filter="submit">保存</button>
+                            <button class="layui-btn layui-btn-primary" type="reset">重置</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script charset="utf-8" src="../frame/layui/layui.js"></script>
+<script charset="utf-8" src="static/pagejs/common.js"></script>
+<script charset="utf-8" src="static/pagejs/public.js"></script>
+
+</html>

@@ -1,0 +1,10 @@
+{
+    "code": 0,
+    "msg": "",
+    "count": 40,
+    "data": [
+        { "id": 10000, "userName": "hanmeimei", "mobile": 13688888888, "trueName": "韩妹妹", "sex": "女", "city": "广东深圳", "address": [{ "receiver": "韩妹妹", "receiverMobile": 13688888888, "receiverAddress": "广东省深圳市福田区杭钢富春2311" }, { "receiver": "李雷", "receiverMobile": null, "receiverAddress": "广东省深圳市罗湖区红桂大厦3612" }], "companyName": "周生生珠宝", "companyTel": "0755-23456789", "orderCount": 24, "status": 0, "createTime": 1529918954320 },
+        { "id": 10001, "userName": "lilei", "mobile": 13677777777, "trueName": "李雷", "sex": "男", "city": "深圳", "address": [{ "receiver": "李雷", "receiverMobile": 13666666666, "receiverAddress": "广东省深圳市罗湖区红桂大厦3612" }], "companyName": "德诚黄金", "companyTel": "", "orderCount": 0, "status": 1, "createTime": 1529918954320 },
+        { "id": 10002, "userName": "terryzhong", "mobile": 13655555555, "trueName": "", "sex": "", "city": "", "address": null, "companyName": "", "companyTel": "", "orderCount": 0, "status": 1, "createTime": 1529918954320 }
+    ]
+}

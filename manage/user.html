@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>系统管理 - 无V不至</title>
+    <link rel="stylesheet" href="../frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/iframe.css">
+</head>
+
+<body>
+    <div class="layui-fluid">
+        <div class="layui-row">
+            <div class="layui-col-sm12">
+                <div class="layui-card">
+                    <div class="layui-card-header">
+                        <div class="sys-handle">
+                            <div class="layui-row layui-col-space10">
+                                <div class="layui-col-sm12">
+                                    <form class="layui-form layui-form-pane sys-handle-search-bar" autocomplete="off">
+                                        <div class="layui-row layui-col-space8">
+                                            <div class="layui-col-sm2">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">用户名</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="userName" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-sm2">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">手机</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="mobile" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-sm2">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">真实姓名</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="trueName" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-sm2">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">公司名称</label>
+                                                    <div class="layui-input-block">
+                                                        <input type="text" name="companyName" class="layui-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-sm2">
+                                                <div class="layui-form-item">
+                                                    <label class="layui-form-label">状态</label>
+                                                    <div class="layui-input-block">
+                                                        <select name="userStatus">
+                                                            <option value="" selected>请选择</option>
+                                                            <option value="0">启用</option>
+                                                            <option value="1">禁用</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="layui-col-sm2">
+                                                <div class="layui-form-item">
+                                                    <button class="layui-btn" type="button" lay-submit lay-filter="search">搜索</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="layui-col-sm12">
+                                    <div class="layui-btn-group sys-handle-button-bar">
+                                        <button class="layui-btn" data-type="addData"><i class="layui-icon layui-icon-add-1"></i>新增</button>
+                                        <button class="layui-btn" data-type="resetPassword"><i class="layui-icon layui-icon-refresh-1"></i>重置密码</button>
+                                        <button class="layui-btn" data-type="delData"><i class="layui-icon layui-icon-delete"></i>删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-card-body">
+                        <table id="dataList" lay-filter="dataList"></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8" src="../frame/layui/layui.js"></script>
+<script charset="utf-8" src="static/pagejs/common.js"></script>
+<script charset="utf-8" src="static/pagejs/user.js"></script>
+<script type="text/html" id="tableHandleBar">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">修改</a>
+    <a class="layui-btn layui-btn-xs layui-btn-normal" lay-event="reset" style="margin-left:2px;">重置密码</a>
+    <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del" style="margin-left:2px;">删除</a>
+</script>
+
+</html>

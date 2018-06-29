@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网站管理中心 - 无V不至</title>
+    <link rel="stylesheet" href="../frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+
+<body>
+    <div class="sys-lefter">
+        <div class="sys-lefter-logo">
+            网站管理中心
+        </div>
+        <ul class="layui-nav layui-nav-tree layui-inline layui-bg-cyan" lay-filter="menu">
+            <li class="layui-nav-item layui-this"><a href="console.html" target="mainIframer">控制台</a></li>
+            <li class="layui-nav-item"><a href="public.html" target="mainIframer">公共</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">属性</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="propertyCategory.html" target="mainIframer">属性分类</a></dd>
+                    <dd><a href="property.html" target="mainIframer">属性管理</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">商品</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="goodsCategory.html" target="mainIframer">商品分类</a></dd>
+                    <dd><a href="goods.html" target="mainIframer">商品管理</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">钻石</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="diamondQuote.html" target="mainIframer">国际报价</a></dd>
+                    <dd><a href="diamond.html" target="mainIframer">钻石管理</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="order.html" target="mainIframer">订单</a></li>
+            <li class="layui-nav-item"><a href="user.html" target="mainIframer">用户</a></li>
+        </ul>
+    </div>
+
+    <div class="sys-righter">
+        <div class="sys-righter-toper">
+            <div class="inner-wrap">
+                <h4><i class="layui-icon layui-icon-more-vertical"></i><span>控制台</span></h4><span style="font-size:14px;color:#777;">全部商品分类</span> admin，上一次登录：2018-06-12<a id="logout">退出</a>
+            </div>
+        </div>
+        <div class="sys-righter-mainer">
+            <iframe id="mainIframer" name="mainIframer" src="console.html" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+<script charset="utf-8" src="../frame/layui/layui.js"></script>
+<script>
+    layui.use(['element', 'layer'], function() {
+        var element = layui.element,
+            layer = layui.layer,
+            $ = layui.jquery;
+
+        //监听导航点击
+        element.on('nav(menu)', function(elem) {
+            $('.sys-righter-toper span').text(elem.text());
+        });
+
+        //退出操作
+        $('#logout').on('click', function() {
+            parent.layer.confirm('确定要退出吗？', function(index) {
+                parent.layer.closeAll();
+                console.log('退出');
+                //TODO
+                window.location.href = './';
+            });
+        });
+    });
+</script>
+
+</html>

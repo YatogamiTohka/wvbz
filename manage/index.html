@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网站管理中心 - 无V不至</title>
+    <link rel="stylesheet" href="../frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+
+<body>
+    <div class="layui-admin-login">
+        <div class="layui-admin-login-header">
+            <img src="static/images/logo.png" height="60">
+        </div>
+        <div class="layui-admin-login-body">
+            <div class="layui-admin-login-body-shade"></div>
+            <form class="layui-form" autocomplete="off">
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-col-sm12">
+                        <div class="layui-form-item">
+                            <label class="layui-admin-login-icon layui-icon layui-icon-username"></label>
+                            <input type="text" name="username" class="layui-input" placeholder="用户名" maxlength="20" lay-verify="required">
+                        </div>
+                    </div>
+                    <div class="layui-col-sm12">
+                        <div class="layui-form-item">
+                            <label class="layui-admin-login-icon layui-icon layui-icon-password"></label>
+                            <input type="password" name="password" class="layui-input" placeholder="密码" maxlength="20" lay-verify="required">
+                        </div>
+                    </div>
+                    <div class="layui-col-sm7">
+                        <div class="layui-form-item">
+                            <label class="layui-admin-login-icon layui-icon layui-icon-vercode"></label>
+                            <input type="text" name="vercode" class="layui-input" placeholder="图片验证码" maxlength="5" lay-verify="required">
+                        </div>
+                    </div>
+                    <div class="layui-col-sm5">
+                        <div class="layui-form-item">
+                            <img src="https://www.oschina.net/action/user/captcha" class="layui-admin-login-vercode" title="换一张">
+                        </div>
+                    </div>
+                    <div class="layui-col-sm12">
+                        <div class="layui-form-item">
+                            <input type="checkbox" name="remember" lay-skin="primary" title="记住用户名" value="1">
+                        </div>
+                    </div>
+                    <div class="layui-col-sm12">
+                        <div class="layui-form-item">
+                            <button class="layui-btn layui-btn-fluid" type="button" lay-submit lay-filter="login">登 录</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="layui-admin-login-footer">
+            &copy; 2018-2020 无V不至
+        </div>
+    </div>
+</body>
+<script charset="utf-8" src="../frame/layui/layui.js"></script>
+<script charset="utf-8" src="../frame/static/js/jquery.min.js"></script>
+<script charset="utf-8" src="../frame/static/js/jquery.cookie.min.js"></script>
+<script charset="utf-8" src="static/pagejs/index.js"></script>
+
+</html>

@@ -1,0 +1,37 @@
+@charset "utf-8";
+body {
+    background: #fff;
+}
+
+.layui-fluid {
+    padding: 15px;
+}
+
+.layui-form-item {
+    margin: 0!important;
+}
+
+.layui-form-item .layui-form-label {
+    width: 80px!important;
+    padding: 8px!important;
+}
+
+.layui-form-item .layui-form-label.layui-form-label-required {
+    color: #f00;
+}
+
+.layui-form-item .layui-input-block {
+    margin-left: 96px!important;
+}
+
+.layui-form-item .layui-btn {
+    min-width: 100px;
+}
+
+.layui-form-item .layui-btn+.layui-btn {
+    margin-left: 5px;
+}
+
+hr {
+    margin: 5px 0!important;
+}

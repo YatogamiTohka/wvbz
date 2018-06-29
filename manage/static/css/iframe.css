@@ -1,0 +1,76 @@
+@charset "utf-8";
+body {
+    background: #efefef;
+}
+
+.layui-fluid {
+    padding: 12px;
+}
+
+.layui-card-header {
+    height: auto;
+    line-height: normal;
+    padding: 10px;
+}
+
+.layui-card-body {
+    padding: 10px;
+}
+
+.sys-handle-button-bar .layui-btn i {
+    font-size: 14px;
+}
+
+.sys-handle-search-bar .layui-form-item {
+    margin: 0!important;
+}
+
+.sys-handle-search-bar .layui-form-item .layui-form-label {
+    width: 80px!important;
+    padding: 8px!important;
+}
+
+.sys-handle-search-bar .layui-form-item .layui-input-block {
+    margin-left: 80px!important;
+}
+
+.sys-handle-search-bar .layui-form-item .layui-btn+.layui-btn {
+    margin-left: 4px;
+}
+
+.layui-table,
+.layui-table-view {
+    margin: 0;
+}
+
+.layui-table-cell {
+    padding: 0 8px;
+}
+
+.layui-table td {
+    font-size: 12px;
+}
+
+.layui-table-tips-main {
+    font-size: 12px;
+    padding: 8px;
+}
+
+
+/* 用于操作按钮，表格字段中 field: 'handle' 不能去掉 */
+
+.laytable-cell-1-handle {
+    line-height: 26px;
+}
+
+.layui-table-page .layui-laypage {
+    float: right;
+}
+
+.text-orange {
+    color: #fa7c41!important;
+}
+
+.text-gray {
+    color: #999!important;
+}

@@ -67,6 +67,10 @@ body {
     float: right;
 }
 
+.table-image-box {
+    cursor: pointer;
+}
+
 .text-orange {
     color: #fa7c41!important;
 }

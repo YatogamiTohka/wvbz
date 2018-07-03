@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>系统管理1 - 无V不至</title>
+    <title>系统管理 - 无V不至</title>
     <link rel="stylesheet" href="../frame/layui/css/layui.css" media="all">
     <link rel="stylesheet" href="static/css/global.css">
     <link rel="stylesheet" href="static/css/iframe.css">
@@ -26,7 +26,7 @@
                                                 <div class="layui-form-item">
                                                     <label class="layui-form-label">用户名</label>
                                                     <div class="layui-input-block">
-                                                        <input type="text" name="userName" class="layui-input">
+                                                        <input type="text" name="userId" class="layui-input">
                                                     </div>
                                                 </div>
                                             </div>
@@ -42,7 +42,7 @@
                                                 <div class="layui-form-item">
                                                     <label class="layui-form-label">真实姓名</label>
                                                     <div class="layui-input-block">
-                                                        <input type="text" name="trueName" class="layui-input">
+                                                        <input type="text" name="userName" class="layui-input">
                                                     </div>
                                                 </div>
                                             </div>
@@ -58,10 +58,10 @@
                                                 <div class="layui-form-item">
                                                     <label class="layui-form-label">状态</label>
                                                     <div class="layui-input-block">
-                                                        <select name="userStatus">
+                                                        <select name="status">
                                                             <option value="" selected>请选择</option>
-                                                            <option value="0">启用</option>
-                                                            <option value="1">禁用</option>
+                                                            <option value="1">启用</option>
+                                                            <option value="3">禁用</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -69,6 +69,7 @@
                                             <div class="layui-col-sm2">
                                                 <div class="layui-form-item">
                                                     <button class="layui-btn" type="button" lay-submit lay-filter="search">搜索</button>
+                                                    <button class="layui-btn layui-btn-primary" type="reset">重置</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -93,6 +94,7 @@
     </div>
 </body>
 <script charset="utf-8" src="../frame/layui/layui.js"></script>
+<script charset="utf-8" src="../frame/static/js/jquery.min.js"></script>
 <script charset="utf-8" src="static/pagejs/common.js"></script>
 <script charset="utf-8" src="static/pagejs/user.js"></script>
 <script type="text/html" id="tableHandleBar">

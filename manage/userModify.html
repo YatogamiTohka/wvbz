@@ -19,7 +19,7 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label layui-form-label-required">用户名</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="userName" class="layui-input" placeholder="" maxlength="20" lay-verify="required">
+                            <input type="text" name="userId" class="layui-input" placeholder="" maxlength="20" lay-verify="required">
                         </div>
                         <div class="layui-form-mid layui-word-aux">英文和数字组合，4-20字符</div>
                     </div>
@@ -28,7 +28,7 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">密码</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="password" class="layui-input" placeholder="" maxlength="20">
+                            <input type="text" name="userPwd" class="layui-input" placeholder="" maxlength="20">
                         </div>
                         <div class="layui-form-mid layui-word-aux">可不填，默认888888</div>
                     </div>
@@ -46,7 +46,7 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">真实姓名</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="trueName" class="layui-input" placeholder="" maxlength="20">
+                            <input type="text" name="userName" class="layui-input" placeholder="" maxlength="20">
                         </div>
                         <div class="layui-form-mid layui-word-aux">20个字符内</div>
                     </div>
@@ -55,9 +55,18 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">性别</label>
                         <div class="layui-input-block">
-                            <input type="radio" name="sex" value="男" title="男" checked>
-                            <input type="radio" name="sex" value="女" title="女">
+                            <input type="radio" name="sex" value="1" title="男" checked>
+                            <input type="radio" name="sex" value="2" title="女">
                         </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm12">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">城市</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="city" class="layui-input" placeholder="" maxlength="50">
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">20个字符内</div>
                     </div>
                 </div>
                 <div class="layui-col-sm12">
@@ -82,7 +91,7 @@
                     <hr class="layui-bg-gray">
                 </div>
                 <div class="layui-col-sm12">
-                    <div class="layui-form-item">
+                    <div class="layui-form-item sys-submit-bar">
                         <label class="layui-form-label">&nbsp;</label>
                         <div class="layui-input-block">
                             <button class="layui-btn" type="button" lay-submit lay-filter="submit">保存</button>
@@ -95,6 +104,7 @@
     </div>
 </body>
 <script charset="utf-8" src="../frame/layui/layui.js"></script>
+<script charset="utf-8" src="../frame/static/js/jquery.min.js"></script>
 <script charset="utf-8" src="static/pagejs/common.js"></script>
 <script charset="utf-8" src="static/pagejs/userModify.js"></script>
 

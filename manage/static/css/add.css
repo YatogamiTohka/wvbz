@@ -24,14 +24,69 @@ body {
     margin-left: 96px!important;
 }
 
-.layui-form-item .layui-btn {
-    min-width: 100px;
-}
-
 .layui-form-item .layui-btn+.layui-btn {
     margin-left: 5px;
 }
 
 hr {
     margin: 5px 0!important;
+}
+
+.sys-submit-bar .layui-btn {
+    min-width: 100px;
+}
+
+
+/* 上传组件 */
+
+.sys-upload {
+    margin: 0;
+    padding: 0;
+}
+
+.sys-upload-header {
+    position: relative;
+}
+
+.sys-upload-header .sys-upload-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 666;
+}
+
+.sys-upload-body {
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 80px;
+    border: #e6e6e6 1px dashed;
+    border-radius: 2px;
+}
+
+.sys-upload-body-list .sys-upload-body-img {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.sys-upload-body-list .sys-upload-body-img+.sys-upload-body-img {
+    margin-left: 10px;
+}
+
+.sys-upload-body-list .sys-upload-body-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.sys-upload-body-list .sys-upload-body-img .sys-upload-body-img-del {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background: url(../images/img_del.png) no-repeat;
+    cursor: pointer;
+    display: inline-block;
 }

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>系统管理 - 无V不至</title>
+    <link rel="stylesheet" href="../frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/add.css">
+</head>
+
+<body>
+    <div class="layui-fluid">
+        <form class="layui-form" autocomplete="off">
+            <div class="layui-row layui-col-space10">
+                <div class="layui-col-sm12">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label layui-form-label-required">分类名称</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="category" class="layui-input" placeholder="" maxlength="20" lay-verify="required">
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">20个字符内</div>
+                    </div>
+                </div>
+                <div class="layui-col-sm12">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label layui-form-label-required">属性分类</label>
+                        <div class="layui-input-inline">
+                            <select name="property" lay-verify="required">
+                                <option value="" selected>请选择</option>
+                                <option value="10000">婚戒</option>
+                                <option value="10001">情侣对戒</option>
+                                <option value="10002">戒托</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm12">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label layui-form-label-required">分类图片</label>
+                        <div class="layui-input-block">
+                            <div class="sys-upload">
+                                <div class="sys-upload-header">
+                                    <input type="text" name="image" class="layui-input" placeholder="请上传图片，最多上传5张" maxlength="100" lay-verify="required" readonly>
+                                    <button type="button" class="layui-btn sys-upload-button">上传</button>
+                                </div>
+                                <div class="sys-upload-body">
+                                    <div class="sys-upload-body-list"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm12">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">排序</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="sort" class="layui-input" placeholder="" maxlength="3" value="99" lay-verify="number">
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">0-99，越小排越前，默认99</div>
+                    </div>
+                </div>
+                <div class="layui-col-sm12">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">前台显示</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="status" value="1" title="显示" checked>
+                            <input type="radio" name="status" value="0" title="隐藏">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-sm12">
+                    <hr class="layui-bg-gray">
+                </div>
+                <div class="layui-col-sm12">
+                    <div class="layui-form-item sys-submit-bar">
+                        <label class="layui-form-label">&nbsp;</label>
+                        <div class="layui-input-block">
+                            <button class="layui-btn" type="button" lay-submit lay-filter="submit">保存</button>
+                            <button class="layui-btn layui-btn-primary" type="reset">重置</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script charset="utf-8" src="../frame/layui/layui.js"></script>
+<script charset="utf-8" src="../frame/static/js/jquery.min.js"></script>
+<script charset="utf-8" src="static/pagejs/common.js"></script>
+<script charset="utf-8" src="static/pagejs/goodsCategoryModify.js"></script>
+
+</html>

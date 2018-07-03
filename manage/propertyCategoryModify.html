@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>系统管理 - 无V不至</title>
+    <link rel="stylesheet" href="../frame/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="static/css/global.css">
+    <link rel="stylesheet" href="static/css/add.css">
+</head>
+
+<body>
+<div class="layui-fluid">
+    <form class="layui-form" autocomplete="off">
+        <div class="layui-row layui-col-space10">
+            <div class="layui-col-sm12">
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-label-required">分别类名称</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="userName" class="layui-input" placeholder="" maxlength="20" lay-verify="required">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">50个字符内</div>
+                </div>
+            </div>
+            <div class="layui-col-sm12">
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-label-required">固定值</label>
+                    <div class="layui-input-inline">
+                        <input type="password" name="password" class="layui-input" placeholder="" maxlength="20" lay-verify="required">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">用于识别标记，不可修改</div>
+                </div>
+            </div>
+            <div class="layui-col-sm12">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">加点系数</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="trueName" class="layui-input" placeholder="" maxlength="20">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">默认为0，保留2个小数点</div>
+                </div>
+            </div>
+            <div class="layui-col-sm12">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">退点系数</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="trueName" class="layui-input" placeholder="" maxlength="20">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">默认为0，保留2个小数点</div>
+                </div>
+            </div>
+            <div class="layui-col-sm12">
+                <hr class="layui-bg-gray">
+            </div>
+            <div class="layui-col-sm12">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">&nbsp;</label>
+                    <div class="layui-input-block">
+                        <button class="layui-btn" type="button" lay-submit lay-filter="submit">保存</button>
+                        <button class="layui-btn layui-btn-primary" type="reset">重置</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script charset="utf-8" src="../frame/layui/layui.js"></script>
+<script charset="utf-8" src="../frame/static/js/jquery.min.js"></script>
+<script charset="utf-8" src="static/pagejs/common.js"></script>
+<script charset="utf-8" src="static/pagejs/userModify.js"></script>
+
+</html>

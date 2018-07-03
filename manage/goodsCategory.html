@@ -12,34 +12,34 @@
 </head>
 
 <body>
-<div class="layui-fluid">
-    <div class="layui-row">
-        <div class="layui-col-sm12">
-            <div class="layui-card">
-                <div class="layui-card-header">
-                    <div class="sys-handle">
-                        <div class="layui-row layui-col-space10">
-                            <div class="layui-col-sm12">
-                                <div class="layui-btn-group sys-handle-button-bar">
-                                    <button class="layui-btn" data-type="addData"><i class="layui-icon layui-icon-add-1"></i>新增</button>
-                                    <button class="layui-btn" data-type="delData"><i class="layui-icon layui-icon-delete"></i>删除</button>
+    <div class="layui-fluid">
+        <div class="layui-row">
+            <div class="layui-col-sm12">
+                <div class="layui-card">
+                    <div class="layui-card-header">
+                        <div class="sys-handle">
+                            <div class="layui-row layui-col-space10">
+                                <div class="layui-col-sm12">
+                                    <div class="layui-btn-group sys-handle-button-bar">
+                                        <button class="layui-btn" data-type="addData"><i class="layui-icon layui-icon-add-1"></i>新增</button>
+                                        <button class="layui-btn" data-type="delData"><i class="layui-icon layui-icon-delete"></i>删除</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="layui-card-body">
-                    <table id="dataList" lay-filter="dataList"></table>
+                    <div class="layui-card-body">
+                        <table id="dataList" lay-filter="dataList"></table>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 <script charset="utf-8" src="../frame/layui/layui.js"></script>
 <script charset="utf-8" src="../frame/static/js/jquery.min.js"></script>
 <script charset="utf-8" src="static/pagejs/common.js"></script>
-<script charset="utf-8" src="static/pagejs/propertyCategory.js"></script>
+<script charset="utf-8" src="static/pagejs/goodsCategory.js"></script>
 <script type="text/html" id="tableHandleBar">
     <a class="layui-btn layui-btn-xs" lay-event="edit">修改</a>
     <a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del" style="margin-left:2px;">删除</a>

@@ -1,6 +1,9 @@
 //接口调试路径
 const path = 'http://192.168.1.17:8080';
 
+//框架ID
+const iframeId = parent['mainIframer'];
+
 //日期格式化
 Date.prototype.format = function(format) {
     /* 

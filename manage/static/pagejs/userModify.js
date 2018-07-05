@@ -10,7 +10,9 @@ layui.use(['form', 'layer'], function() {
         userPwd = $('input[name=userPwd]'),
         mobile = $('input[name=mobile]'),
         userName = $('input[name=userName]'),
-        sex = $('input[name=sex]'),
+        sex = function(val){
+            return $('input[name=sex][value='+ val +']');
+        },
         city = $('input[name=city]'),
         companyName = $('input[name=companyName]'),
         companyTel = $('input[name=companyTel]');
@@ -35,12 +37,12 @@ layui.use(['form', 'layer'], function() {
                     objects = d.objects;
 
                 if (code === 'SUCCESS') {
-                    console.log(objects);
                     userId.val(objects.userId || '');
                     userPwd.val(objects.userPwd || '');
                     mobile.val(objects.mobile || '');
                     userName.val(objects.userName || '');
-                    sex.val(objects.sex || 1).prop('checked', true);
+                    sex(objects.sex || 1).prop('checked', true);
+                    city.val(objects.city || '');
                     companyName.val(objects.companyName || '');
                     companyTel.val(objects.companyTel || '');
                     form.render('radio');
@@ -64,9 +66,6 @@ layui.use(['form', 'layer'], function() {
             method = 'put';
         }
 
-        console.log(saveField);
-        // return;
-
         //通过接口保存数据 TODO
         $.ajax({
             type: method,
@@ -83,7 +82,7 @@ layui.use(['form', 'layer'], function() {
                     parent.layer.alert('保存成功', {
                         yes: function() {
                             parent.layer.closeAll();
-                            parent['mainIframer'].refreshTableList();
+                            iframeId.refreshTableList();
                         }
                     });
                 } else {

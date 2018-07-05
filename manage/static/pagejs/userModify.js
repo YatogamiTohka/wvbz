@@ -56,6 +56,7 @@ layui.use(['form', 'layer'], function() {
 
         var url = '/user/add',
             method = 'post';
+
         saveField = JSON.stringify(saveField);
 
         if (doType === 'edit') {
@@ -63,8 +64,8 @@ layui.use(['form', 'layer'], function() {
             method = 'put';
         }
 
-        console.log(url);
-        return;
+        console.log(saveField);
+        // return;
 
         //通过接口保存数据 TODO
         $.ajax({

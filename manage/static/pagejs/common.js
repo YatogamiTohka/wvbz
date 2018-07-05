@@ -1,5 +1,5 @@
 //接口调试路径
-const path = 'http://192.168.1.118:8080';
+const path = 'http://192.168.1.17:8080';
 
 //日期格式化
 Date.prototype.format = function(format) {
